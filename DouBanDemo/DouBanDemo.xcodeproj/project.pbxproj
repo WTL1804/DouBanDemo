@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100F7B5D1529888E4CB17D28 /* libPods-DouBanDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE228103A45E283F030DD1 /* libPods-DouBanDemo.a */; };
+		8403131E234CB055007FA4A2 /* DBDFairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403131D234CB055007FA4A2 /* DBDFairViewController.m */; };
+		840FA90F235091D80083D382 /* DBDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FA90E235091D80083D382 /* DBDBaseButton.m */; };
+		840FA91223509E820083D382 /* firstCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FA91123509E820083D382 /* firstCellScrollView.m */; };
+		84124032234CAD6600276F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124031234CAD6600276F50 /* AppDelegate.m */; };
+		84124035234CAD6600276F50 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124034234CAD6600276F50 /* SceneDelegate.m */; };
+		8412403B234CAD6600276F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84124039234CAD6600276F50 /* Main.storyboard */; };
+		8412403D234CAD6900276F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8412403C234CAD6900276F50 /* Assets.xcassets */; };
+		84124040234CAD6900276F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8412403E234CAD6900276F50 /* LaunchScreen.storyboard */; };
+		84124043234CAD6900276F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124042234CAD6900276F50 /* main.m */; };
+		8412404D234CAD6900276F50 /* DouBanDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412404C234CAD6900276F50 /* DouBanDemoTests.m */; };
+		84124058234CAD6900276F50 /* DouBanDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124057234CAD6900276F50 /* DouBanDemoUITests.m */; };
+		84124067234CAF6600276F50 /* DBDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124066234CAF6600276F50 /* DBDHomePageViewController.m */; };
+		8412406A234CAFA700276F50 /* DBDMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124069234CAFA700276F50 /* DBDMovieViewController.m */; };
+		84401FC1234CBF59000E2D23 /* dibudaohanglan--2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FB7234CBF56000E2D23 /* dibudaohanglan--2.png */; };
+		84401FC2234CBF59000E2D23 /* shichang-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FB8234CBF57000E2D23 /* shichang-2.png */; };
+		84401FC4234CBF59000E2D23 /* shu-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FBA234CBF57000E2D23 /* shu-2.png */; };
+		84401FC7234CBF59000E2D23 /* shouye.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FBD234CBF58000E2D23 /* shouye.png */; };
+		84401FCA234CBF59000E2D23 /* quanzi.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FC0234CBF58000E2D23 /* quanzi.png */; };
+		84401FCE234CC692000E2D23 /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FCD234CC692000E2D23 /* WelComeViewController.m */; };
+		84401FD1234CCD1C000E2D23 /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FD0234CCD1C000E2D23 /* WelcomeView.m */; };
+		84401FD3234CCE6E000E2D23 /* douban.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 84401FD2234CCE6E000E2D23 /* douban.JPG */; };
+		84401FD7234CD353000E2D23 /* DBDHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FD6234CD353000E2D23 /* DBDHomeView.m */; };
+		84401FDA234CD4AB000E2D23 /* DBDHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FD9234CD4AB000E2D23 /* DBDHeadView.m */; };
+		84401FE0234D6975000E2D23 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FDF234D6975000E2D23 /* TableViewCell.m */; };
+		84401FE4234DD5C7000E2D23 /* DBDMovieHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FE3234DD5C7000E2D23 /* DBDMovieHeadView.m */; };
+		84401FEA234DD9A7000E2D23 /* quanzi-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FE5234DD9A6000E2D23 /* quanzi-2.png */; };
+		84401FEB234DD9A7000E2D23 /* shichang.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FE6234DD9A7000E2D23 /* shichang.png */; };
+		84401FEC234DD9A7000E2D23 /* dibudaohanglan-.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FE7234DD9A7000E2D23 /* dibudaohanglan-.png */; };
+		84401FED234DD9A7000E2D23 /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FE8234DD9A7000E2D23 /* shu.png */; };
+		84401FEE234DD9A7000E2D23 /* shouye-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FE9234DD9A7000E2D23 /* shouye-2.png */; };
+		84401FF0234DDD34000E2D23 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FEF234DDD34000E2D23 /* white.png */; };
+		84401FF2234DDE65000E2D23 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FF1234DDE65000E2D23 /* line.png */; };
+		84401FF5234DDF36000E2D23 /* DBDMovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FF4234DDF36000E2D23 /* DBDMovieView.m */; };
+		84401FF7234DE363000E2D23 /* headBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FF6234DE363000E2D23 /* headBtn.png */; };
+		84401FFA234DF34C000E2D23 /* DBDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401FF9234DF34C000E2D23 /* DBDMineViewController.m */; };
+		84B8E777234CAFE40048E6D1 /* DBDGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8E776234CAFE40048E6D1 /* DBDGroupViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84124049234CAD6900276F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84124025234CAD6600276F50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8412402C234CAD6600276F50;
+			remoteInfo = DouBanDemo;
+		};
+		84124054234CAD6900276F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84124025234CAD6600276F50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8412402C234CAD6600276F50;
+			remoteInfo = DouBanDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		213F39AF8FF57A3E53DA05D1 /* Pods-DouBanDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanDemo.debug.xcconfig"; path = "Target Support Files/Pods-DouBanDemo/Pods-DouBanDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		54F1BC464FC709D8319CADFB /* Pods-DouBanDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanDemo.release.xcconfig"; path = "Target Support Files/Pods-DouBanDemo/Pods-DouBanDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8403131C234CB055007FA4A2 /* DBDFairViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDFairViewController.h; sourceTree = "<group>"; };
+		8403131D234CB055007FA4A2 /* DBDFairViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDFairViewController.m; sourceTree = "<group>"; };
+		840FA90D235091D80083D382 /* DBDBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDBaseButton.h; sourceTree = "<group>"; };
+		840FA90E235091D80083D382 /* DBDBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDBaseButton.m; sourceTree = "<group>"; };
+		840FA91023509E820083D382 /* firstCellScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = firstCellScrollView.h; sourceTree = "<group>"; };
+		840FA91123509E820083D382 /* firstCellScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = firstCellScrollView.m; sourceTree = "<group>"; };
+		8412402D234CAD6600276F50 /* DouBanDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouBanDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84124030234CAD6600276F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../DouBanDemo/AppDelegate.h; sourceTree = "<group>"; };
+		84124031234CAD6600276F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../DouBanDemo/AppDelegate.m; sourceTree = "<group>"; };
+		84124033234CAD6600276F50 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneDelegate.h; path = ../DouBanDemo/SceneDelegate.h; sourceTree = "<group>"; };
+		84124034234CAD6600276F50 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SceneDelegate.m; path = ../DouBanDemo/SceneDelegate.m; sourceTree = "<group>"; };
+		8412403A234CAD6600276F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8412403C234CAD6900276F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8412403F234CAD6900276F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84124041234CAD6900276F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84124042234CAD6900276F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../DouBanDemo/main.m; sourceTree = "<group>"; };
+		84124048234CAD6900276F50 /* DouBanDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouBanDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8412404C234CAD6900276F50 /* DouBanDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouBanDemoTests.m; sourceTree = "<group>"; };
+		8412404E234CAD6900276F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84124053234CAD6900276F50 /* DouBanDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouBanDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84124057234CAD6900276F50 /* DouBanDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouBanDemoUITests.m; sourceTree = "<group>"; };
+		84124059234CAD6900276F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84124065234CAF6600276F50 /* DBDHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDHomePageViewController.h; sourceTree = "<group>"; };
+		84124066234CAF6600276F50 /* DBDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDHomePageViewController.m; sourceTree = "<group>"; };
+		84124068234CAFA700276F50 /* DBDMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDMovieViewController.h; sourceTree = "<group>"; };
+		84124069234CAFA700276F50 /* DBDMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDMovieViewController.m; sourceTree = "<group>"; };
+		84401FB7234CBF56000E2D23 /* dibudaohanglan--2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dibudaohanglan--2.png"; sourceTree = "<group>"; };
+		84401FB8234CBF57000E2D23 /* shichang-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shichang-2.png"; sourceTree = "<group>"; };
+		84401FBA234CBF57000E2D23 /* shu-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shu-2.png"; sourceTree = "<group>"; };
+		84401FBD234CBF58000E2D23 /* shouye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shouye.png; sourceTree = "<group>"; };
+		84401FC0234CBF58000E2D23 /* quanzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quanzi.png; sourceTree = "<group>"; };
+		84401FCC234CC692000E2D23 /* WelComeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
+		84401FCD234CC692000E2D23 /* WelComeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
+		84401FCF234CCD1C000E2D23 /* WelcomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
+		84401FD0234CCD1C000E2D23 /* WelcomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
+		84401FD2234CCE6E000E2D23 /* douban.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = douban.JPG; sourceTree = "<group>"; };
+		84401FD5234CD353000E2D23 /* DBDHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDHomeView.h; sourceTree = "<group>"; };
+		84401FD6234CD353000E2D23 /* DBDHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDHomeView.m; sourceTree = "<group>"; };
+		84401FD8234CD4AB000E2D23 /* DBDHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDHeadView.h; sourceTree = "<group>"; };
+		84401FD9234CD4AB000E2D23 /* DBDHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDHeadView.m; sourceTree = "<group>"; };
+		84401FDE234D6975000E2D23 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		84401FDF234D6975000E2D23 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		84401FE2234DD5C7000E2D23 /* DBDMovieHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDMovieHeadView.h; sourceTree = "<group>"; };
+		84401FE3234DD5C7000E2D23 /* DBDMovieHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDMovieHeadView.m; sourceTree = "<group>"; };
+		84401FE5234DD9A6000E2D23 /* quanzi-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quanzi-2.png"; sourceTree = "<group>"; };
+		84401FE6234DD9A7000E2D23 /* shichang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shichang.png; sourceTree = "<group>"; };
+		84401FE7234DD9A7000E2D23 /* dibudaohanglan-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dibudaohanglan-.png"; sourceTree = "<group>"; };
+		84401FE8234DD9A7000E2D23 /* shu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu.png; sourceTree = "<group>"; };
+		84401FE9234DD9A7000E2D23 /* shouye-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shouye-2.png"; sourceTree = "<group>"; };
+		84401FEF234DDD34000E2D23 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		84401FF1234DDE65000E2D23 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		84401FF3234DDF36000E2D23 /* DBDMovieView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDMovieView.h; sourceTree = "<group>"; };
+		84401FF4234DDF36000E2D23 /* DBDMovieView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDMovieView.m; sourceTree = "<group>"; };
+		84401FF6234DE363000E2D23 /* headBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headBtn.png; sourceTree = "<group>"; };
+		84401FF8234DF34C000E2D23 /* DBDMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDMineViewController.h; sourceTree = SOURCE_ROOT; };
+		84401FF9234DF34C000E2D23 /* DBDMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDMineViewController.m; sourceTree = SOURCE_ROOT; };
+		84B8E775234CAFE40048E6D1 /* DBDGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDGroupViewController.h; sourceTree = "<group>"; };
+		84B8E776234CAFE40048E6D1 /* DBDGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDGroupViewController.m; sourceTree = "<group>"; };
+		A7BE228103A45E283F030DD1 /* libPods-DouBanDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DouBanDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8412402A234CAD6600276F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F7B5D1529888E4CB17D28 /* libPods-DouBanDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84124045234CAD6900276F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84124050234CAD6900276F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35274271E59469FFAC6F474A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE228103A45E283F030DD1 /* libPods-DouBanDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84124024234CAD6600276F50 = {
+			isa = PBXGroup;
+			children = (
+				84401FB4234CB6C9000E2D23 /* Main */,
+				84401FB5234CB714000E2D23 /* Class */,
+				84401FB6234CBF11000E2D23 /* TabBarPicture */,
+				8412402F234CAD6600276F50 /* DouBanDemo */,
+				8412404B234CAD6900276F50 /* DouBanDemoTests */,
+				84124056234CAD6900276F50 /* DouBanDemoUITests */,
+				8412402E234CAD6600276F50 /* Products */,
+				AD2484E438788398CD888D3E /* Pods */,
+				35274271E59469FFAC6F474A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8412402E234CAD6600276F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8412402D234CAD6600276F50 /* DouBanDemo.app */,
+				84124048234CAD6900276F50 /* DouBanDemoTests.xctest */,
+				84124053234CAD6900276F50 /* DouBanDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8412402F234CAD6600276F50 /* DouBanDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84124039234CAD6600276F50 /* Main.storyboard */,
+				8412403E234CAD6900276F50 /* LaunchScreen.storyboard */,
+				84124041234CAD6900276F50 /* Info.plist */,
+			);
+			path = DouBanDemo;
+			sourceTree = "<group>";
+		};
+		8412404B234CAD6900276F50 /* DouBanDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8412404C234CAD6900276F50 /* DouBanDemoTests.m */,
+				8412404E234CAD6900276F50 /* Info.plist */,
+			);
+			path = DouBanDemoTests;
+			sourceTree = "<group>";
+		};
+		84124056234CAD6900276F50 /* DouBanDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84124057234CAD6900276F50 /* DouBanDemoUITests.m */,
+				84124059234CAD6900276F50 /* Info.plist */,
+			);
+			path = DouBanDemoUITests;
+			sourceTree = "<group>";
+		};
+		84401FAF234CB095000E2D23 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				84401FEF234DDD34000E2D23 /* white.png */,
+				84401FF1234DDE65000E2D23 /* line.png */,
+				84124065234CAF6600276F50 /* DBDHomePageViewController.h */,
+				84124066234CAF6600276F50 /* DBDHomePageViewController.m */,
+				84401FD5234CD353000E2D23 /* DBDHomeView.h */,
+				84401FD6234CD353000E2D23 /* DBDHomeView.m */,
+				84401FD8234CD4AB000E2D23 /* DBDHeadView.h */,
+				84401FD9234CD4AB000E2D23 /* DBDHeadView.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		84401FB0234CB0C0000E2D23 /* MoviePage */ = {
+			isa = PBXGroup;
+			children = (
+				84401FF6234DE363000E2D23 /* headBtn.png */,
+				84B97F86234F663700DCE5CD /* Model */,
+				84B97F85234F662300DCE5CD /* View */,
+				84B97F84234F660600DCE5CD /* Controller */,
+			);
+			path = MoviePage;
+			sourceTree = "<group>";
+		};
+		84401FB1234CB0DB000E2D23 /* FairPage */ = {
+			isa = PBXGroup;
+			children = (
+				8403131C234CB055007FA4A2 /* DBDFairViewController.h */,
+				8403131D234CB055007FA4A2 /* DBDFairViewController.m */,
+			);
+			path = FairPage;
+			sourceTree = "<group>";
+		};
+		84401FB2234CB0F6000E2D23 /* MinePage */ = {
+			isa = PBXGroup;
+			children = (
+				84401FF8234DF34C000E2D23 /* DBDMineViewController.h */,
+				84401FF9234DF34C000E2D23 /* DBDMineViewController.m */,
+			);
+			name = MinePage;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		84401FB3234CB103000E2D23 /* GroupPage */ = {
+			isa = PBXGroup;
+			children = (
+				84B8E775234CAFE40048E6D1 /* DBDGroupViewController.h */,
+				84B8E776234CAFE40048E6D1 /* DBDGroupViewController.m */,
+			);
+			path = GroupPage;
+			sourceTree = "<group>";
+		};
+		84401FB4234CB6C9000E2D23 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84124042234CAD6900276F50 /* main.m */,
+				8412403C234CAD6900276F50 /* Assets.xcassets */,
+				84124030234CAD6600276F50 /* AppDelegate.h */,
+				84124031234CAD6600276F50 /* AppDelegate.m */,
+				84124033234CAD6600276F50 /* SceneDelegate.h */,
+				84124034234CAD6600276F50 /* SceneDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84401FB5234CB714000E2D23 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				84401FE1234DD4C7000E2D23 /* Base */,
+				84401FCB234CC66C000E2D23 /* WelcomePage */,
+				84401FAF234CB095000E2D23 /* HomePage */,
+				84401FB0234CB0C0000E2D23 /* MoviePage */,
+				84401FB1234CB0DB000E2D23 /* FairPage */,
+				84401FB3234CB103000E2D23 /* GroupPage */,
+				84401FB2234CB0F6000E2D23 /* MinePage */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		84401FB6234CBF11000E2D23 /* TabBarPicture */ = {
+			isa = PBXGroup;
+			children = (
+				84401FB7234CBF56000E2D23 /* dibudaohanglan--2.png */,
+				84401FC0234CBF58000E2D23 /* quanzi.png */,
+				84401FB8234CBF57000E2D23 /* shichang-2.png */,
+				84401FBD234CBF58000E2D23 /* shouye.png */,
+				84401FBA234CBF57000E2D23 /* shu-2.png */,
+				84401FE7234DD9A7000E2D23 /* dibudaohanglan-.png */,
+				84401FE5234DD9A6000E2D23 /* quanzi-2.png */,
+				84401FE6234DD9A7000E2D23 /* shichang.png */,
+				84401FE9234DD9A7000E2D23 /* shouye-2.png */,
+				84401FE8234DD9A7000E2D23 /* shu.png */,
+			);
+			path = TabBarPicture;
+			sourceTree = "<group>";
+		};
+		84401FCB234CC66C000E2D23 /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				84401FD4234CCE72000E2D23 /* Picture */,
+				84401FCC234CC692000E2D23 /* WelComeViewController.h */,
+				84401FCD234CC692000E2D23 /* WelComeViewController.m */,
+				84401FCF234CCD1C000E2D23 /* WelcomeView.h */,
+				84401FD0234CCD1C000E2D23 /* WelcomeView.m */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		84401FD4234CCE72000E2D23 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				84401FD2234CCE6E000E2D23 /* douban.JPG */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		84401FE1234DD4C7000E2D23 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84401FDE234D6975000E2D23 /* TableViewCell.h */,
+				84401FDF234D6975000E2D23 /* TableViewCell.m */,
+				840FA90D235091D80083D382 /* DBDBaseButton.h */,
+				840FA90E235091D80083D382 /* DBDBaseButton.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84B97F84234F660600DCE5CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84124068234CAFA700276F50 /* DBDMovieViewController.h */,
+				84124069234CAFA700276F50 /* DBDMovieViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84B97F85234F662300DCE5CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84401FE2234DD5C7000E2D23 /* DBDMovieHeadView.h */,
+				84401FE3234DD5C7000E2D23 /* DBDMovieHeadView.m */,
+				84401FF3234DDF36000E2D23 /* DBDMovieView.h */,
+				84401FF4234DDF36000E2D23 /* DBDMovieView.m */,
+				840FA91023509E820083D382 /* firstCellScrollView.h */,
+				840FA91123509E820083D382 /* firstCellScrollView.m */,
+			);
+			name = View;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		84B97F86234F663700DCE5CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2484E438788398CD888D3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				213F39AF8FF57A3E53DA05D1 /* Pods-DouBanDemo.debug.xcconfig */,
+				54F1BC464FC709D8319CADFB /* Pods-DouBanDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8412402C234CAD6600276F50 /* DouBanDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8412405C234CAD6900276F50 /* Build configuration list for PBXNativeTarget "DouBanDemo" */;
+			buildPhases = (
+				AA506CE9F760E03D9151B24D /* [CP] Check Pods Manifest.lock */,
+				84124029234CAD6600276F50 /* Sources */,
+				8412402A234CAD6600276F50 /* Frameworks */,
+				8412402B234CAD6600276F50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouBanDemo;
+			productName = DouBanDemo;
+			productReference = 8412402D234CAD6600276F50 /* DouBanDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84124047234CAD6900276F50 /* DouBanDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8412405F234CAD6900276F50 /* Build configuration list for PBXNativeTarget "DouBanDemoTests" */;
+			buildPhases = (
+				84124044234CAD6900276F50 /* Sources */,
+				84124045234CAD6900276F50 /* Frameworks */,
+				84124046234CAD6900276F50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8412404A234CAD6900276F50 /* PBXTargetDependency */,
+			);
+			name = DouBanDemoTests;
+			productName = DouBanDemoTests;
+			productReference = 84124048234CAD6900276F50 /* DouBanDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84124052234CAD6900276F50 /* DouBanDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84124062234CAD6900276F50 /* Build configuration list for PBXNativeTarget "DouBanDemoUITests" */;
+			buildPhases = (
+				8412404F234CAD6900276F50 /* Sources */,
+				84124050234CAD6900276F50 /* Frameworks */,
+				84124051234CAD6900276F50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84124055234CAD6900276F50 /* PBXTargetDependency */,
+			);
+			name = DouBanDemoUITests;
+			productName = DouBanDemoUITests;
+			productReference = 84124053234CAD6900276F50 /* DouBanDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84124025234CAD6600276F50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "王天亮";
+				TargetAttributes = {
+					8412402C234CAD6600276F50 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					84124047234CAD6900276F50 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8412402C234CAD6600276F50;
+					};
+					84124052234CAD6900276F50 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8412402C234CAD6600276F50;
+					};
+				};
+			};
+			buildConfigurationList = 84124028234CAD6600276F50 /* Build configuration list for PBXProject "DouBanDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84124024234CAD6600276F50;
+			productRefGroup = 8412402E234CAD6600276F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8412402C234CAD6600276F50 /* DouBanDemo */,
+				84124047234CAD6900276F50 /* DouBanDemoTests */,
+				84124052234CAD6900276F50 /* DouBanDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8412402B234CAD6600276F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84401FCA234CBF59000E2D23 /* quanzi.png in Resources */,
+				84401FC7234CBF59000E2D23 /* shouye.png in Resources */,
+				84124040234CAD6900276F50 /* LaunchScreen.storyboard in Resources */,
+				84401FC1234CBF59000E2D23 /* dibudaohanglan--2.png in Resources */,
+				84401FEC234DD9A7000E2D23 /* dibudaohanglan-.png in Resources */,
+				84401FEE234DD9A7000E2D23 /* shouye-2.png in Resources */,
+				84401FED234DD9A7000E2D23 /* shu.png in Resources */,
+				84401FF0234DDD34000E2D23 /* white.png in Resources */,
+				84401FF2234DDE65000E2D23 /* line.png in Resources */,
+				84401FEA234DD9A7000E2D23 /* quanzi-2.png in Resources */,
+				84401FF7234DE363000E2D23 /* headBtn.png in Resources */,
+				8412403D234CAD6900276F50 /* Assets.xcassets in Resources */,
+				84401FD3234CCE6E000E2D23 /* douban.JPG in Resources */,
+				8412403B234CAD6600276F50 /* Main.storyboard in Resources */,
+				84401FC4234CBF59000E2D23 /* shu-2.png in Resources */,
+				84401FC2234CBF59000E2D23 /* shichang-2.png in Resources */,
+				84401FEB234DD9A7000E2D23 /* shichang.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84124046234CAD6900276F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84124051234CAD6900276F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA506CE9F760E03D9151B24D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouBanDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84124029234CAD6600276F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84401FE4234DD5C7000E2D23 /* DBDMovieHeadView.m in Sources */,
+				84124067234CAF6600276F50 /* DBDHomePageViewController.m in Sources */,
+				84401FDA234CD4AB000E2D23 /* DBDHeadView.m in Sources */,
+				84401FFA234DF34C000E2D23 /* DBDMineViewController.m in Sources */,
+				84401FF5234DDF36000E2D23 /* DBDMovieView.m in Sources */,
+				84124032234CAD6600276F50 /* AppDelegate.m in Sources */,
+				84124043234CAD6900276F50 /* main.m in Sources */,
+				84401FD7234CD353000E2D23 /* DBDHomeView.m in Sources */,
+				8412406A234CAFA700276F50 /* DBDMovieViewController.m in Sources */,
+				84401FE0234D6975000E2D23 /* TableViewCell.m in Sources */,
+				84401FD1234CCD1C000E2D23 /* WelcomeView.m in Sources */,
+				840FA91223509E820083D382 /* firstCellScrollView.m in Sources */,
+				840FA90F235091D80083D382 /* DBDBaseButton.m in Sources */,
+				84401FCE234CC692000E2D23 /* WelComeViewController.m in Sources */,
+				8403131E234CB055007FA4A2 /* DBDFairViewController.m in Sources */,
+				84124035234CAD6600276F50 /* SceneDelegate.m in Sources */,
+				84B8E777234CAFE40048E6D1 /* DBDGroupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84124044234CAD6900276F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8412404D234CAD6900276F50 /* DouBanDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8412404F234CAD6900276F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84124058234CAD6900276F50 /* DouBanDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8412404A234CAD6900276F50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8412402C234CAD6600276F50 /* DouBanDemo */;
+			targetProxy = 84124049234CAD6900276F50 /* PBXContainerItemProxy */;
+		};
+		84124055234CAD6900276F50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8412402C234CAD6600276F50 /* DouBanDemo */;
+			targetProxy = 84124054234CAD6900276F50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84124039234CAD6600276F50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8412403A234CAD6600276F50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8412403E234CAD6900276F50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8412403F234CAD6900276F50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8412405A234CAD6900276F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8412405B234CAD6900276F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8412405D234CAD6900276F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213F39AF8FF57A3E53DA05D1 /* Pods-DouBanDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouBanDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.DouBanDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8412405E234CAD6900276F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F1BC464FC709D8319CADFB /* Pods-DouBanDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouBanDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.DouBanDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84124060234CAD6900276F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouBanDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.DouBanDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouBanDemo.app/DouBanDemo";
+			};
+			name = Debug;
+		};
+		84124061234CAD6900276F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouBanDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.DouBanDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouBanDemo.app/DouBanDemo";
+			};
+			name = Release;
+		};
+		84124063234CAD6900276F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouBanDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.DouBanDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DouBanDemo;
+			};
+			name = Debug;
+		};
+		84124064234CAD6900276F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouBanDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.DouBanDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DouBanDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84124028234CAD6600276F50 /* Build configuration list for PBXProject "DouBanDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8412405A234CAD6900276F50 /* Debug */,
+				8412405B234CAD6900276F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8412405C234CAD6900276F50 /* Build configuration list for PBXNativeTarget "DouBanDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8412405D234CAD6900276F50 /* Debug */,
+				8412405E234CAD6900276F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8412405F234CAD6900276F50 /* Build configuration list for PBXNativeTarget "DouBanDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84124060234CAD6900276F50 /* Debug */,
+				84124061234CAD6900276F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84124062234CAD6900276F50 /* Build configuration list for PBXNativeTarget "DouBanDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84124063234CAD6900276F50 /* Debug */,
+				84124064234CAD6900276F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84124025234CAD6600276F50 /* Project object */;
+}
