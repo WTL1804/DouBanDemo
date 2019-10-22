@@ -22,11 +22,22 @@
     self.backgroundColor = [UIColor blackColor];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.frame.size.height * 1.25 / 7, self.frame.size.width, self.frame.size.height - self.frame.size.height * 1.25 / 7) style:UITableViewStyleGrouped];
-    [self addSubview:self.tableView];
+    //[self addSubview:self.tableView];
     [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"WTLCell"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     //self.tableView.backgroundColor = [UIColor whiteColor];
+    self.mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.frame.size.height * 1.25 / 7, self.frame.size.width, self.frame.size.height - self.frame.size.height * 1.25 / 7)];
+    [self addSubview:self.mainScroll];
+    self.mainScroll.backgroundColor = [UIColor whiteColor];
+    UIImage *image = [UIImage imageNamed:@"123.JPG"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 40, 100, 100)];
+    imageView.image = image;
+    [self.mainScroll addSubview:imageView];
+    self.mainScroll.pagingEnabled = YES;
+    self.mainScroll.contentSize = CGSizeMake(self.frame.size.width * 2, 0);    
+    
+    
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 5;
@@ -53,6 +64,10 @@
 }
 //- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
 //    return nil;
+//}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    
+//    NSLog(@"%f",self.mainScroll.contentOffset.x);
 //}
 
 @end

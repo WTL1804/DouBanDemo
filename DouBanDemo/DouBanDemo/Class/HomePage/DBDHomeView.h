@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DBDHomeView : UIView <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIScrollView *mainScroll;
+
 
 - (void)setUI;
 

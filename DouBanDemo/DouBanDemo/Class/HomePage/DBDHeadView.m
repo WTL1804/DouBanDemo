@@ -57,6 +57,9 @@
     self.rightButton.selected = NO;
     
     
+    self.greenImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green.png"]];
+    [self addSubview:self.greenImageView];
+    self.greenImageView.frame = CGRectMake(self.frame.size.width/2 - 50, self.frame.size.height - 4, 40, 4);
     
 }
 - (void)layoutSubviews {
@@ -68,17 +71,20 @@
     }];
     
     [self.leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.searchTextfield.mas_bottom).offset(20);
-        make.bottom.equalTo(self);
-        make.left.equalTo(self.mas_left).offset(self.frame.size.width/2 - 50);
-        make.right.equalTo(self.mas_right).offset(-self.frame.size.width/2);
+        make.centerY.mas_equalTo(self.whiteImage); //make.top.equalTo(self.searchTextfield.mas_bottom).offset(20);
+        make.centerX.mas_equalTo(-30);
+        //make.bottom.equalTo(self);
+        //make.left.equalTo(self.mas_left).offset(self.frame.size.width/2 - 50);
+        //make.right.equalTo(self.mas_right).offset(-self.frame.size.width/2);
     }];
     
     [self.rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.searchTextfield.mas_bottom).offset(20);
-        make.bottom.equalTo(self);
-        make.left.equalTo(self.leftButton.mas_right);
-        make.right.equalTo(self.leftButton.mas_right).offset(50);
+//        make.top.equalTo(self.searchTextfield.mas_bottom).offset(20);
+//        make.bottom.equalTo(self);
+//        make.left.equalTo(self.leftButton.mas_right);
+//        make.right.equalTo(self.leftButton.mas_right).offset(50);
+        make.centerY.mas_equalTo(self.whiteImage); //make.top.equalTo(self.searchTextfield.mas_bottom).offset(20);
+               make.centerX.mas_equalTo(30);
     }] ;
     
     [self.whiteImage mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -94,27 +100,17 @@
            make.left.equalTo(self.mas_left);
            make.right.equalTo(self.mas_right);
        }];
+//    [self.greenImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.mas_bottom).offset(-4);
+//        make.bottom.bottom.equalTo(self);
+//        make.left.equalTo(self.leftButton.mas_left).offset(20);
+//        make.right.equalTo(self.leftButton.mas_right).offset(-20);
+//    }];
 }
 
 - (void)colorChange:(UIButton *)btn {
     
-    if (btn.tag == 120) {
-        if (btn.selected == NO) {
-            btn.selected = YES;
-            self.leftButton.selected = NO;
-        } else if (btn.selected == YES) {
-            btn.selected = NO;
-            self.leftButton.selected = YES;
-        }
-    } else if (btn.tag == 122) {
-        if (btn.selected == NO) {
-            btn.selected = YES;
-            self.rightButton.selected = NO;
-        } else if (btn.selected == YES) {
-            btn.selected = NO;
-            self.rightButton.selected = YES;
-        }
-    }
+    [self.delegate clickButton:btn];
     //NSLog(@"%d %d",self.leftButton.selected,self.rightButton.selected);
 }
 @end

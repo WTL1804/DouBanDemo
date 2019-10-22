@@ -10,7 +10,7 @@
 #import "DBDBaseButton.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface firstCellScrollView : UIScrollView
+@interface DBDFirstCellScrollView : UIScrollView
 //正在热映的button
 @property (nonatomic, strong) DBDBaseButton *firstButton;
 @property (nonatomic, strong) DBDBaseButton *secondButton;
@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) DBDBaseButton *fourButton;
 @property (nonatomic, strong) DBDBaseButton *fiveButton;
 @property (nonatomic, strong) DBDBaseButton *sixButton;
+
+
 
 - (void)setUI;
 

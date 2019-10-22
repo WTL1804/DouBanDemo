@@ -12,7 +12,7 @@
 #import "TableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DBDMovieViewController : UIViewController 
+@interface DBDMovieViewController : UIViewController <clickHeadBtn, UIScrollViewDelegate, tableViewDelegate>
 
 @property (nonatomic, strong) DBDMovieHeadView *headView;
 @property (nonatomic, strong) DBDMovieView *movieView;

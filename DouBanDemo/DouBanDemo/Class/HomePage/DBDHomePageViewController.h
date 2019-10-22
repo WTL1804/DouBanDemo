@@ -11,7 +11,7 @@
 #import "DBDHeadView.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DBDHomePageViewController : UIViewController
+@interface DBDHomePageViewController : UIViewController <clickBtn, UIScrollViewDelegate>
 @property (nonatomic, strong) DBDHomeView *homeView;
 @property (nonatomic, strong) DBDHeadView *headView;
 @end

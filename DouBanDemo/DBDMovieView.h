@@ -7,15 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
+@protocol tableViewDelegate <NSObject>
 
-@interface DBDMovieView : UIView <UITableViewDelegate, UITableViewDataSource>
+- (void)clickCellButton;
+
+@end
+
+@interface DBDMovieView : UIView <UITableViewDelegate, UITableViewDataSource, cellClickBtn>
 
 
 @property (nonatomic, strong) UITableView *overAlltableView;
 
+@property (nonatomic, strong) UIScrollView *mainScrollView;
 
+@property (nonatomic, weak) id <tableViewDelegate> tableViewDelegate;
 - (void)setUI;
 
 //- (void)colorChange:(UIButton *)btn;

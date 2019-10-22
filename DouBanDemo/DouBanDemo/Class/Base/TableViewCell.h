@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "firstCellScrollView.h"
+#import "DBDFirstCellScrollView.h"
 NS_ASSUME_NONNULL_BEGIN
 enum WTLTableViewCellStyle{
 
@@ -15,17 +15,29 @@ enum WTLTableViewCellStyle{
     UITableViewCellOfMoviePageHead = 1,
     UITableViewCellOfMoviePageAll = 2,
 };
+@protocol cellClickBtn <NSObject>
+
+- (void)clickBtn;
+
+@end
 
 @interface TableViewCell : UITableViewCell
 
 @property (nonatomic,assign) enum WTLTableViewCellStyle cellStyleEnum;
 
-@property (nonatomic, strong) firstCellScrollView *zeroSectionScroll;
+@property (nonatomic, strong) DBDFirstCellScrollView *zeroSectionScroll;
 
 @property (nonatomic, strong) UIButton *leftBtn;
 @property (nonatomic, strong) UIButton *rightBtn;
+@property (nonatomic, strong) UIButton *allBtn;
+
+@property (nonatomic, strong) UIImageView *lineImage;
+
+@property (nonatomic, weak) id <cellClickBtn>cellDelegate;
 
 - (void)colorChange:(UIButton *)btn;
+
+- (void)allBtnClicked;
 
 @end
 

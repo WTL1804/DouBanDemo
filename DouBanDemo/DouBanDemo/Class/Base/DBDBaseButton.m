@@ -24,7 +24,7 @@
 }
 // 背景边界
 - (CGRect)backgroundRectForBounds:(CGRect)bounds {
-    return CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height + 10);
+    return CGRectMake(0, 0, self.bounds.size.width - 30, self.bounds.size.height -30);
 }
 //图片大小
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {

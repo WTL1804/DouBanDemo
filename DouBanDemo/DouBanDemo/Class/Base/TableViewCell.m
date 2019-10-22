@@ -7,7 +7,7 @@
 //
 
 #import "TableViewCell.h"
-
+#import "DBDNounButton.h"
 @implementation TableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -22,14 +22,12 @@
     } else if ([self.reuseIdentifier isEqualToString:@"WTLCell3"]){
         
         
-        self.zeroSectionScroll = [[firstCellScrollView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width * 2, [UIScreen mainScreen].bounds.size.height - [UIScreen mainScreen].bounds.size.height * 1.25 / 7 - [UIScreen mainScreen].bounds.size.height *2/ 9 - 50)];
+        self.zeroSectionScroll = [[DBDFirstCellScrollView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width * 2, [UIScreen mainScreen].bounds.size.height - [UIScreen mainScreen].bounds.size.height * 1.25 / 7 - [UIScreen mainScreen].bounds.size.height *2/ 9 - 50)];
         [self.contentView addSubview:self.zeroSectionScroll];
         self.zeroSectionScroll.contentSize = CGSizeMake(0, 0);
         self.zeroSectionScroll.backgroundColor = [UIColor whiteColor];
         self.zeroSectionScroll.contentOffset = CGPointMake(0, 0);
-        UIImageView *temp = [[UIImageView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width, 20, 40, 40)];
-        temp.backgroundColor = [UIColor orangeColor];
-        [self.zeroSectionScroll addSubview: temp];
+      
         [self.zeroSectionScroll setUI];
         
         
@@ -50,6 +48,23 @@
         [self.rightBtn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
         self.rightBtn.selected = NO;
         self.rightBtn.tag = 120;
+        
+        self.lineImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line.png"]];
+        [self addSubview:self.lineImage];
+        UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line.png"]];
+        [self addSubview:line];
+       line.frame = CGRectMake(0, 486, 375, 3);
+        
+        self.allBtn = [DBDNounButton buttonWithType:UIButtonTypeCustom];
+        [self.allBtn setTitle:@"全部 34" forState:UIControlStateNormal];
+        [self.contentView addSubview:self.allBtn];
+        [self.allBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.allBtn contentRectForBounds:self.allBtn.bounds];
+        [self.allBtn setImage:[UIImage imageNamed:@"xiangyou.png"] forState:UIControlStateNormal];
+        self.allBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        [self.allBtn addTarget:self action:@selector(allBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+        
+        
         
         [self.contentView addSubview: _rightBtn];
         
@@ -103,6 +118,12 @@
     [super layoutSubviews];
     _rightBtn.frame = CGRectMake(110, 0, 100, 50);
     _leftBtn.frame = CGRectMake(0, 0, 100, 50);
+    _lineImage.frame  = CGRectMake(15, 50, self.frame.size.width - 45, 3);
+    _allBtn.frame = CGRectMake(self.contentView.frame.size.width - 100, 0, 100, 50);
+}
+
+- (void)allBtnClicked {
+    [self.cellDelegate clickBtn];
 }
 
 @end
