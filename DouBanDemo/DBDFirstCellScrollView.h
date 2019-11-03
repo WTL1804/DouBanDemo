@@ -27,9 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) DBDBaseButton *fiveButton;
 @property (nonatomic, strong) DBDBaseButton *sixButton;
 
-
+@property (nonatomic, strong) NSMutableArray *mutArray;
 
 - (void)setUI;
+- (void)movieClick:(DBDBaseButton *)btn;
 
 @end
 

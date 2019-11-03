@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "TableViewCell.h"
+#import "TableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 @protocol tableViewDelegate <NSObject>
 
 - (void)clickCellButton;
 
 @end
+
 
 @interface DBDMovieView : UIView <UITableViewDelegate, UITableViewDataSource, cellClickBtn>
 
@@ -23,6 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIScrollView *mainScrollView;
 
 @property (nonatomic, weak) id <tableViewDelegate> tableViewDelegate;
+
+@property (nonatomic, strong)NSMutableArray *allMovieArray;
+
+@property (nonatomic, strong) UIActivityIndicatorView * activityIndicator;
+@property TableViewCell *cell;
+@property TableViewCell *SecondRowCell;
 - (void)setUI;
 
 //- (void)colorChange:(UIButton *)btn;

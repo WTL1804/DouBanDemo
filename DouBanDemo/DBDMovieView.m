@@ -19,6 +19,9 @@
 */
 - (void)setUI {
     self.backgroundColor = [UIColor whiteColor];
+   // self.allMovieArray = [[NSMutableArray alloc] init];
+    
+    
     
     
     self.mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.frame.size.height * 1.25 / 7, self.frame.size.width, self.frame.size.height - self.frame.size.height * 1.25 / 7 - 88)];
@@ -37,7 +40,13 @@
     [self.mainScrollView addSubview:self.overAlltableView];
     self.overAlltableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    
+    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+    self.activityIndicator.center  = self.center;
+    [self addSubview:self.activityIndicator];
+    //[self.activityIndicator setColor:[UIColor systemBackgroundColor]];
+    [self.activityIndicator setColor:[UIColor blackColor]];
+    //[self.activityIndicator startAnimating];
+    //self.activityIndicator.hidesWhenStopped = NO;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
@@ -47,19 +56,18 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
         if (indexPath.section == 0) {
-        TableViewCell *cell = [self.overAlltableView dequeueReusableCellWithIdentifier:@"WTLCell3" forIndexPath:indexPath];
-            cell.cellDelegate = self;
-
-        cell.backgroundColor = [UIColor whiteColor];
-        return cell;
+        _cell = [self.overAlltableView dequeueReusableCellWithIdentifier:@"WTLCell3" forIndexPath:indexPath];
+            _cell.cellDelegate = self;
+        _cell.backgroundColor = [UIColor whiteColor];
+        return _cell;
         } else {
-            TableViewCell *cell = [self.overAlltableView dequeueReusableCellWithIdentifier:@"WTLCell4" forIndexPath:indexPath];
-            cell.backgroundColor = [UIColor whiteColor];
-            return cell;
+            _SecondRowCell = [self.overAlltableView dequeueReusableCellWithIdentifier:@"WTLCell4" forIndexPath:indexPath];
+            _SecondRowCell.backgroundColor = [UIColor whiteColor];
+            return _SecondRowCell;
         }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return (self.frame.size.height - self.frame.size.height * 1.25 / 7 - self.frame.size.height * 2 / 9);
+    return (self.frame.size.height - self.frame.size.height * 1.25 / 7 - self.frame.size.height * 2 / 9 + 50);
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0;
@@ -76,5 +84,4 @@
 - (void)clickBtn{
     [self.tableViewDelegate clickCellButton];
 }
-
 @end

@@ -32,6 +32,10 @@ enum WTLTableViewCellStyle{
 @property (nonatomic, strong) UIButton *allBtn;
 
 @property (nonatomic, strong) UIImageView *lineImage;
+@property (nonatomic, strong) UIImageView *advertiseImageView;
+
+@property (nonatomic, copy) NSString * leftString;
+@property (nonatomic, copy) NSString * rightString;
 
 @property (nonatomic, weak) id <cellClickBtn>cellDelegate;
 

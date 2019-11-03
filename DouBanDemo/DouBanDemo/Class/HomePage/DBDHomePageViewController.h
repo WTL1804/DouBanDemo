@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DBDHomePageViewController : UIViewController <clickBtn, UIScrollViewDelegate>
 @property (nonatomic, strong) DBDHomeView *homeView;
 @property (nonatomic, strong) DBDHeadView *headView;
+@property (nonatomic, strong) NSMutableArray *allMovieModelArray;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -13,6 +13,8 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     self.selectionStyle = NO;
+    self.leftString = [[NSString alloc] init];
+    self.rightString = [[NSString alloc] init];
     if ([self.reuseIdentifier isEqualToString:@"WTLCell"]) {
         self.backgroundColor = [UIColor whiteColor];
         self.selectionStyle = NO;
@@ -22,7 +24,7 @@
     } else if ([self.reuseIdentifier isEqualToString:@"WTLCell3"]){
         
         
-        self.zeroSectionScroll = [[DBDFirstCellScrollView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width * 2, [UIScreen mainScreen].bounds.size.height - [UIScreen mainScreen].bounds.size.height * 1.25 / 7 - [UIScreen mainScreen].bounds.size.height *2/ 9 - 50)];
+        self.zeroSectionScroll = [[DBDFirstCellScrollView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width * 2, [UIScreen mainScreen].bounds.size.height - [UIScreen mainScreen].bounds.size.height * 1.25 / 7 - [UIScreen mainScreen].bounds.size.height * 2 / 9 - 50 + 50)];
         [self.contentView addSubview:self.zeroSectionScroll];
         self.zeroSectionScroll.contentSize = CGSizeMake(0, 0);
         self.zeroSectionScroll.backgroundColor = [UIColor whiteColor];
@@ -51,9 +53,9 @@
         
         self.lineImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line.png"]];
         [self addSubview:self.lineImage];
-        UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line.png"]];
-        [self addSubview:line];
-       line.frame = CGRectMake(0, 486, 375, 3);
+//        UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line.png"]];
+//        [self addSubview:line];
+//       line.frame = CGRectMake(0, 486, 375, 3);
         
         self.allBtn = [DBDNounButton buttonWithType:UIButtonTypeCustom];
         [self.allBtn setTitle:@"全部 34" forState:UIControlStateNormal];
@@ -72,7 +74,8 @@
         
     } else  if ([self.reuseIdentifier isEqualToString:@"WTLCell4"]){
         
-        
+        self.advertiseImageView = [[UIImageView alloc] init];
+        [self.advertiseImageView setImage:[UIImage imageNamed:@""]];
         return self;
         
     }
@@ -96,19 +99,15 @@
             btn.selected = YES;
             self.leftBtn.selected = NO;
             self.zeroSectionScroll.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
-        } else if (btn.selected == YES) {
-            btn.selected = NO;
-            self.leftBtn.selected = YES;
-        }
+            [self.allBtn setTitle:[NSString stringWithFormat:@"全部 %@",self.rightString] forState:UIControlStateNormal];
+        } 
     } else if (btn.tag == 122) {
         if (btn.selected == NO) {
             btn.selected = YES;
             self.zeroSectionScroll.contentOffset = CGPointMake(0, 0);
             [self.zeroSectionScroll reloadInputViews];
             self.rightBtn.selected = NO;
-        } else if (btn.selected == YES) {
-            btn.selected = NO;
-            self.rightBtn.selected = YES;
+            [self.allBtn setTitle:[NSString stringWithFormat:@"全部 %@",self.leftString] forState:UIControlStateNormal];
         }
     }
     //NSLog(@"%d %d",self.leftButton.selected,self.rightButton.selected);
@@ -118,7 +117,7 @@
     [super layoutSubviews];
     _rightBtn.frame = CGRectMake(110, 0, 100, 50);
     _leftBtn.frame = CGRectMake(0, 0, 100, 50);
-    _lineImage.frame  = CGRectMake(15, 50, self.frame.size.width - 45, 3);
+    _lineImage.frame  = CGRectMake(15, 45, self.frame.size.width - 45, 3);
     _allBtn.frame = CGRectMake(self.contentView.frame.size.width - 100, 0, 100, 50);
 }
 

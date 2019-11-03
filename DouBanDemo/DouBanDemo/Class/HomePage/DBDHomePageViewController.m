@@ -9,6 +9,8 @@
 #import "DBDHomePageViewController.h"
 #import "WelComeViewController.h"
 #import <Masonry.h>
+#import "DBDMovieModel.h"
+#import "DBDManager.h"
 @interface DBDHomePageViewController ()
 
 @end
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    _allMovieModelArray = [[NSMutableArray alloc] init];
     //模态切换到欢迎界面
     WelComeViewController *welViewController = [[WelComeViewController alloc] init];
     welViewController.modalPresentationStyle = 0;
@@ -92,5 +94,8 @@
         return;
     }
     NSLog(@"%f",width);
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 @end
