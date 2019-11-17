@@ -16,8 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIButton *middleBtn;
 @property (nonatomic, strong) UIButton *rightBtn;
 
-- (void)setUI;
+@property (nonatomic, strong) UIImageView *lineImageView;
+@property (nonatomic, strong) UIImageView *scorllLineImageView;
 
+- (void)setUI;
+- (void)colorChange:(UIButton *)btn;
 @end
 
 NS_ASSUME_NONNULL_END

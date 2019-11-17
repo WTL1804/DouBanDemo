@@ -29,6 +29,8 @@
 		84124058234CAD6900276F50 /* DouBanDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124057234CAD6900276F50 /* DouBanDemoUITests.m */; };
 		84124067234CAF6600276F50 /* DBDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124066234CAF6600276F50 /* DBDHomePageViewController.m */; };
 		8412406A234CAFA700276F50 /* DBDMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84124069234CAFA700276F50 /* DBDMovieViewController.m */; };
+		841EBDBD237806AB00C4D964 /* DBDEveryStarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841EBDBC237806AB00C4D964 /* DBDEveryStarButton.m */; };
+		841EBDC0237BCD7000C4D964 /* DBDNavigationStarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841EBDBF237BCD7000C4D964 /* DBDNavigationStarButton.m */; };
 		84401FC1234CBF59000E2D23 /* dibudaohanglan--2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FB7234CBF56000E2D23 /* dibudaohanglan--2.png */; };
 		84401FC2234CBF59000E2D23 /* shichang-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FB8234CBF57000E2D23 /* shichang-2.png */; };
 		84401FC4234CBF59000E2D23 /* shu-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84401FBA234CBF57000E2D23 /* shu-2.png */; };
@@ -59,6 +61,11 @@
 		84435F1D236D10240058B004 /* DBDEveryMovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84435F1C236D10240058B004 /* DBDEveryMovieView.m */; };
 		84435F20236D105D0058B004 /* DBDEveryMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84435F1F236D105D0058B004 /* DBDEveryMovieViewController.m */; };
 		84435F23236D12900058B004 /* DBDEveryMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84435F22236D12900058B004 /* DBDEveryMovieModel.m */; };
+		84435F262371C3770058B004 /* DBDAllViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84435F252371C3770058B004 /* DBDAllViewModel.m */; };
+		84435F292372F5DE0058B004 /* split.png in Resources */ = {isa = PBXBuildFile; fileRef = 84435F282372F5DE0058B004 /* split.png */; };
+		84435F2C2372FB9B0058B004 /* DBDAllMovieStarsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84435F2B2372FB9B0058B004 /* DBDAllMovieStarsButton.m */; };
+		84477919237D497600C6F6CE /* DBDEveryMovieImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84477918237D497600C6F6CE /* DBDEveryMovieImagesModel.m */; };
+		844BCE1423753F7700E3CD18 /* advertise.png in Resources */ = {isa = PBXBuildFile; fileRef = 844BCE1323753F7700E3CD18 /* advertise.png */; };
 		844BD4D12361C6490081979A /* DBDMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BD4D02361C6490081979A /* DBDMovieModel.m */; };
 		8475AF88235F34690066D533 /* DBDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475AF87235F34690066D533 /* DBDManager.m */; };
 		84B8E777234CAFE40048E6D1 /* DBDGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8E776234CAFE40048E6D1 /* DBDGroupViewController.m */; };
@@ -122,6 +129,10 @@
 		84124066234CAF6600276F50 /* DBDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDHomePageViewController.m; sourceTree = "<group>"; };
 		84124068234CAFA700276F50 /* DBDMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDMovieViewController.h; sourceTree = "<group>"; };
 		84124069234CAFA700276F50 /* DBDMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDMovieViewController.m; sourceTree = "<group>"; };
+		841EBDBB237806AB00C4D964 /* DBDEveryStarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDEveryStarButton.h; sourceTree = "<group>"; };
+		841EBDBC237806AB00C4D964 /* DBDEveryStarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDEveryStarButton.m; sourceTree = "<group>"; };
+		841EBDBE237BCD7000C4D964 /* DBDNavigationStarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDNavigationStarButton.h; sourceTree = "<group>"; };
+		841EBDBF237BCD7000C4D964 /* DBDNavigationStarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDNavigationStarButton.m; sourceTree = "<group>"; };
 		84401FB7234CBF56000E2D23 /* dibudaohanglan--2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dibudaohanglan--2.png"; sourceTree = "<group>"; };
 		84401FB8234CBF57000E2D23 /* shichang-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shichang-2.png"; sourceTree = "<group>"; };
 		84401FBA234CBF57000E2D23 /* shu-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shu-2.png"; sourceTree = "<group>"; };
@@ -165,6 +176,14 @@
 		84435F1F236D105D0058B004 /* DBDEveryMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDEveryMovieViewController.m; sourceTree = "<group>"; };
 		84435F21236D12900058B004 /* DBDEveryMovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDEveryMovieModel.h; sourceTree = "<group>"; };
 		84435F22236D12900058B004 /* DBDEveryMovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDEveryMovieModel.m; sourceTree = "<group>"; };
+		84435F242371C3770058B004 /* DBDAllViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDAllViewModel.h; sourceTree = "<group>"; };
+		84435F252371C3770058B004 /* DBDAllViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDAllViewModel.m; sourceTree = "<group>"; };
+		84435F282372F5DE0058B004 /* split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split.png; sourceTree = "<group>"; };
+		84435F2A2372FB9B0058B004 /* DBDAllMovieStarsButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDAllMovieStarsButton.h; sourceTree = "<group>"; };
+		84435F2B2372FB9B0058B004 /* DBDAllMovieStarsButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDAllMovieStarsButton.m; sourceTree = "<group>"; };
+		84477917237D497600C6F6CE /* DBDEveryMovieImagesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDEveryMovieImagesModel.h; sourceTree = "<group>"; };
+		84477918237D497600C6F6CE /* DBDEveryMovieImagesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDEveryMovieImagesModel.m; sourceTree = "<group>"; };
+		844BCE1323753F7700E3CD18 /* advertise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = advertise.png; sourceTree = "<group>"; };
 		844BD4CF2361C6490081979A /* DBDMovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDMovieModel.h; sourceTree = "<group>"; };
 		844BD4D02361C6490081979A /* DBDMovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDMovieModel.m; sourceTree = "<group>"; };
 		8475AF86235F34690066D533 /* DBDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDManager.h; sourceTree = "<group>"; };
@@ -222,6 +241,8 @@
 		840FA95E235346950083D382 /* MoviePagePicture */ = {
 			isa = PBXGroup;
 			children = (
+				844BCE1323753F7700E3CD18 /* advertise.png */,
+				84435F282372F5DE0058B004 /* split.png */,
 				840FA9AA2358A32F0083D382 /* xiangyou.png */,
 				84401FF6234DE363000E2D23 /* headBtn.png */,
 				840FA9B5235ADD050083D382 /* navigation.png */,
@@ -232,6 +253,7 @@
 		840FA9B7235ADDDF0083D382 /* AllPage */ = {
 			isa = PBXGroup;
 			children = (
+				84435F272371C3850058B004 /* Model */,
 				840FA9B9235ADE210083D382 /* Controller */,
 				840FA9B8235ADDFE0083D382 /* View */,
 			);
@@ -245,6 +267,8 @@
 				840FA9B0235A97CC0083D382 /* DBDAllMovieView.m */,
 				840FA9BA235ADE710083D382 /* DBDAllOfHeadView.h */,
 				840FA9BB235ADE710083D382 /* DBDAllOfHeadView.m */,
+				84435F2A2372FB9B0058B004 /* DBDAllMovieStarsButton.h */,
+				84435F2B2372FB9B0058B004 /* DBDAllMovieStarsButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -447,6 +471,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		84435F272371C3850058B004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84435F242371C3770058B004 /* DBDAllViewModel.h */,
+				84435F252371C3770058B004 /* DBDAllViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		84B97F84234F660600DCE5CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,6 +502,10 @@
 				840FA91123509E820083D382 /* DBDFirstCellScrollView.m */,
 				84435F1B236D10240058B004 /* DBDEveryMovieView.h */,
 				84435F1C236D10240058B004 /* DBDEveryMovieView.m */,
+				841EBDBB237806AB00C4D964 /* DBDEveryStarButton.h */,
+				841EBDBC237806AB00C4D964 /* DBDEveryStarButton.m */,
+				841EBDBE237BCD7000C4D964 /* DBDNavigationStarButton.h */,
+				841EBDBF237BCD7000C4D964 /* DBDNavigationStarButton.m */,
 			);
 			name = View;
 			path = ../..;
@@ -485,6 +522,8 @@
 				84435F13236933860058B004 /* DBDWishModel.m */,
 				84435F21236D12900058B004 /* DBDEveryMovieModel.h */,
 				84435F22236D12900058B004 /* DBDEveryMovieModel.m */,
+				84477917237D497600C6F6CE /* DBDEveryMovieImagesModel.h */,
+				84477918237D497600C6F6CE /* DBDEveryMovieImagesModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -623,8 +662,10 @@
 				84401FD3234CCE6E000E2D23 /* douban.JPG in Resources */,
 				8412403B234CAD6600276F50 /* Main.storyboard in Resources */,
 				84401FC4234CBF59000E2D23 /* shu-2.png in Resources */,
+				84435F292372F5DE0058B004 /* split.png in Resources */,
 				84401FC2234CBF59000E2D23 /* shichang-2.png in Resources */,
 				840FA9A7235704CD0083D382 /* 123.JPG in Resources */,
+				844BCE1423753F7700E3CD18 /* advertise.png in Resources */,
 				84401FEB234DD9A7000E2D23 /* shichang.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +724,7 @@
 				84435F23236D12900058B004 /* DBDEveryMovieModel.m in Sources */,
 				84401FDA234CD4AB000E2D23 /* DBDHeadView.m in Sources */,
 				84435F20236D105D0058B004 /* DBDEveryMovieViewController.m in Sources */,
+				84435F262371C3770058B004 /* DBDAllViewModel.m in Sources */,
 				84401FFA234DF34C000E2D23 /* DBDMineViewController.m in Sources */,
 				84401FF5234DDF36000E2D23 /* DBDMovieView.m in Sources */,
 				84124032234CAD6600276F50 /* AppDelegate.m in Sources */,
@@ -691,11 +733,15 @@
 				84401FD7234CD353000E2D23 /* DBDHomeView.m in Sources */,
 				840FA9B1235A97CC0083D382 /* DBDAllMovieView.m in Sources */,
 				8412406A234CAFA700276F50 /* DBDMovieViewController.m in Sources */,
+				841EBDBD237806AB00C4D964 /* DBDEveryStarButton.m in Sources */,
 				84401FE0234D6975000E2D23 /* TableViewCell.m in Sources */,
 				840FA9B4235A98650083D382 /* DBDAllViewController.m in Sources */,
 				84401FD1234CCD1C000E2D23 /* WelcomeView.m in Sources */,
 				840FA91223509E820083D382 /* DBDFirstCellScrollView.m in Sources */,
+				84435F2C2372FB9B0058B004 /* DBDAllMovieStarsButton.m in Sources */,
+				841EBDC0237BCD7000C4D964 /* DBDNavigationStarButton.m in Sources */,
 				840FA9BC235ADE710083D382 /* DBDAllOfHeadView.m in Sources */,
+				84477919237D497600C6F6CE /* DBDEveryMovieImagesModel.m in Sources */,
 				840FA90F235091D80083D382 /* DBDBaseButton.m in Sources */,
 				84401FCE234CC692000E2D23 /* WelComeViewController.m in Sources */,
 				840FA9AE2358A56C0083D382 /* DBDNounButton.m in Sources */,
@@ -873,6 +919,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GHTLBPCZUG;
 				INFOPLIST_FILE = DouBanDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

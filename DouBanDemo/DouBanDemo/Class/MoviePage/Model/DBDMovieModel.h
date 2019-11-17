@@ -14,6 +14,11 @@
 @protocol ImagesModel
 @end
 
+@protocol DirectorsModel
+@end
+
+@protocol CastsModel
+@end
 #import "JSONModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -22,17 +27,31 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *medium;
 @end
 
-
+@interface CastsModel : JSONModel
+@property (nonatomic, copy) NSString *name;
+@end
 
 @interface RatingModel : JSONModel
 @property (nonatomic, copy) NSString *average;
 @property (nonatomic, copy) NSString *stars;
 @end
 
+@interface DirectorsModel : JSONModel
+@property (nonatomic,copy) NSString *name;
+@end
+
 @interface SubjectsModel : JSONModel
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *ID;
+@property (nonatomic, strong) NSString *year;
+
+@property (nonatomic, copy) NSArray *pubdates;
+@property (nonatomic, copy) NSArray *genres;
+
+@property (nonatomic) NSArray <DirectorsModel>*directors;
+@property (nonatomic) NSArray <CastsModel>*casts;
+
 
 @property (nonatomic) RatingModel *rating;
 

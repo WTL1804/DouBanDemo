@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIButton *fiveBtn;
 @property (nonatomic, strong) UIButton *sixBtn;
 
-@property (nonatomic, strong) id<clickHeadBtn>delegate;
+@property (nonatomic, weak) id<clickHeadBtn>delegate;
 
 - (void)setUI;
 

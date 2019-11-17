@@ -14,11 +14,13 @@
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
 #import "DBDEveryMovieViewController.h"
+#import <SOZOChromoplast.h>
 @interface DBDMovieViewController ()
 
 @end
 
 @implementation DBDMovieViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -467,7 +469,16 @@
     DBDBaseButton *button = [noti object];
     DBDEveryMovieViewController *every = [[DBDEveryMovieViewController alloc] init];
     every.ID = [button.ID mutableCopy];
+    SOZOChromoplast *color = [[SOZOChromoplast alloc] initWithImage:[button currentBackgroundImage]];
+    every.colorMutArray = [[NSMutableArray alloc] init];
+    [every.colorMutArray addObject:color];
+    //every.title = @"电影";
     [self.navigationController pushViewController:every animated:NO];
 }
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"clickBtn" object:nil];
+}
+
+
 
 @end

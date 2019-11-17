@@ -3,4 +3,5 @@ target 'DouBanDemo' do
 pod 'Masonry'
 pod 'JSONModel'
 pod 'SDWebImage'
+pod 'SOZOChromoplast'
 end

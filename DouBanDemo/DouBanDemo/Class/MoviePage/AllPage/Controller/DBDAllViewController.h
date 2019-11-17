@@ -11,11 +11,16 @@
 #import "DBDAllOfHeadView.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DBDAllViewController : UIViewController
+@interface DBDAllViewController : UIViewController <UIScrollViewDelegate>
 
 @property (nonatomic, strong) DBDAllMovieView *allMovieView;
 @property (nonatomic, strong) DBDAllOfHeadView *headView;
+@property BOOL is_Refresh;
 
+- (void)colorClickChange:(NSNotification *)noti;
+- (void)clickAllBtn;
+- (void)ImageFetch;
+- (void)scrollFetch;
 
 @end
 

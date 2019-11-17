@@ -47,7 +47,6 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"WTLCell" forIndexPath:indexPath];
-    cell.cellStyleEnum =  UITableViewCellOfHomePage;
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

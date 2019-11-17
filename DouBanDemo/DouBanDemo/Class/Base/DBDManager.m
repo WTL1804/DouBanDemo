@@ -98,4 +98,25 @@ static DBDManager *manager = nil;
     [dataTask resume];
 
 }
+
+- (void)everyMoviewImagesWithID:(NSString *)ID success:(EveryMovieImageHandle)successBlock error:(ErrorHandle)errorBlock  {
+    NSString *string =[NSString stringWithFormat:@"https://douban-api.uieee.com/v2/movie/subject/%@/photos",ID];
+    NSURL *url = [NSURL URLWithString:string];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error == nil) {
+            
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSError *err = nil;
+            DBDEveryMovieImagesModel *everyImagesModel = [[DBDEveryMovieImagesModel alloc] initWithDictionary:dict error:&err];
+          
+            successBlock(everyImagesModel);
+        } else {
+            errorBlock(error);
+        }
+    }];
+    [dataTask resume];
+    
+}
 @end
